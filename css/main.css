@@ -8,6 +8,5 @@ html {
 
 body {
     font-family: 'Lato', sans-serif;
-    background-image: url(img/background.jpg);
-    background-size: cover;
+    background-image: url(/img/background.jpg);
 }

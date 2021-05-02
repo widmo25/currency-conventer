@@ -8,6 +8,7 @@ html {
 
 .body {
     font-family: 'Lato', sans-serif;
-    background-image: url("../img/background.jpg");
+    background-image: url("https://i.pinimg.com/originals/5e/f1/6f/5ef16f197a44c886a2910933c9f6bf62.jpg");
     background-size: cover;
+    background-position: center;
 }

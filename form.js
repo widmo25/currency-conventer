@@ -6,23 +6,24 @@
     const calculateResult = (checkedCurrency) => {
         const inputElement = document.querySelector(".js-input");
         const resultElement = document.querySelector(".js-result");
+        let result;
         const euroRate = 4.55;
         const usdRate = 3.78;
         const poundRate = 5.27;
         switch (checkedCurrency.value) {
             case "eur":
-                let euroChange = inputElement.value / euroRate;
-                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${euroChange.toFixed(2)} Euro`;
+                result = inputElement.value / euroRate;
+                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${result.toFixed(2)} Euro`;
                 break;
 
             case "usd":
-                let dollarChange = inputElement.value / usdRate;
-                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${dollarChange.toFixed(2)} Dolarów`;
+                result = inputElement.value / usdRate;
+                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${result.toFixed(2)} Dolarów`;
                 break;
 
             case "pound":
-                let poundChange = inputElement.value / poundRate;
-                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${poundChange.toFixed(2)} Funtów`;
+                result = inputElement.value / poundRate;
+                resultElement.innerHTML = `za ${inputElement.value}zł otrzymamy ${result.toFixed(2)} Funtów`;
                 break;
         };
     }
